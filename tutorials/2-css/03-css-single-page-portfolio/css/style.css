@@ -1,11 +1,10 @@
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ color palette ~~~~~~~~~~~~~~~~~~~~~ */
 
 :root {
-   --bg-color-1: #f5f5f5;
-   --bg-color-2: #cde9ff;
-   --font-1: #8b84a3;
-   --accent-1: #BFE2FF;
+    --bg-color-1: #f5f5f5;
+    --bg-color-2: #cde9ff;
+    --font-1: #8b84a3;
+    --accent-1: #BFE2FF;
 }
 
 
@@ -58,6 +57,12 @@ header {
     border-bottom: rgba(191, 226, 255, 1) 3px solid;
 }
 
+@media (max-width: 700px) {
+    header {
+        padding-left: 2rem;
+    }
+}
+
 header h1 {
     font-size: 3rem;
     text-decoration: underline;
@@ -76,6 +81,12 @@ nav a {
     display: inline-block;
     margin: 0 1rem;
     transition: all .5s ease;
+}
+
+@media (max-width: 750px) {
+    nav a {
+        margin: 0.2rem;
+    }
 }
 
 nav a:hover {
@@ -113,7 +124,7 @@ main {
     max-width: 50rem;
     margin: 0 auto;
     padding: 2rem 0;
-        color: rgb(139, 132, 163);
+    color: rgb(139, 132, 163);
 
 }
 
@@ -126,6 +137,19 @@ main {
     text-decoration-color: #EEAECA;
 }
 
+
+@media (max-width: 800px) {
+    .about-content {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-content {
+        padding: 2rem;
+    }
+}
+
 .portfolio-item {
     margin-bottom: 5rem;
     background-color: rgb(205, 233, 255);
@@ -135,6 +159,18 @@ main {
     border-style: double;
     border-width: 2rem;
     border-color: #f5f5f5;
+}
+
+@media (max-width: 800px) {
+    .portfolio-item {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio-item {
+        padding: 2rem;
+    }
 }
 
 .portfolio-content h2 {
@@ -183,6 +219,6 @@ footer p {
 
 /* style classes */
 
-.accent-1{
+.accent-1 {
     color: #EEAECA;
 }
