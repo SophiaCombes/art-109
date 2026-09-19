@@ -1,8 +1,24 @@
 
+body{
+    animation: change-color 4s infinite alternate;
+}
 
+@keyframes change-color {
+    0% {background-color: beige;}
+    50% {background-color: azure;}
+    100% {background-color: rgb(188, 241, 163);}
+}
 
 .title {
     font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg, 0deg);}
+    100% {transform: skew(30deg, 20deg);}
 }
 
 .square {
@@ -16,7 +32,30 @@
 
 .square:hover{
     background-color: greenyellow;
-    transform: rotate(30deg)
+    transform: rotate(460deg)
+}
+
+.thing {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    animation: rainbow 2s infinite;
+}
+
+@keyframes rainbow {
+    12% {background-color: red;}
+    24% {background-color: orange;}
+    36% {background-color: yellow;}
+    48% {background-color: greenyellow;}
+    60% {background-color: rgb(8, 185, 8);}
+    72% {background-color: rgb(28, 107, 255);}
+    84% {background-color: rgb(118, 0, 172);}
+    100% {background-color: rgb(169, 0, 178);}
+    from, to { transform: scale(1, 1); }
+    50% { transform: scale(1.50, 0.9); }
+    75% { transform: scale(0.95, 1.50); }
 }
 
 .button-div{
@@ -37,4 +76,15 @@
     background-color: lightslategray;
     transform: scaleX(2.5);
     color:black;
+}
+
+.loading{
+    background-color: lightblue;
+    animation: stretch 5s 3 normal;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {width: 100px;}
+    100% {width: 80vw;}
 }
