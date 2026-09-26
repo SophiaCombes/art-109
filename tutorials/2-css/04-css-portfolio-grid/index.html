@@ -9,13 +9,20 @@
 </head>
 
 <body>
-    <header class="flex-container">
-        <h1>Shiba Combes</h1>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Shiba Combes</h1>
+            </div>
+            <div class="nav">
+                <button class="hamburger">≡</button>
+                <ul class="nav-menu">
+                    <li><a href="#about-section"> About </a></li>
+                    <li><a href="#portfolio-section"> Work </a></li>
+                    <li><a href="#contact-section"> Contact </a></li>
+                </ul>
+            </div>
 
-        <nav>
-            <a href="#about-section"> About </a>
-            <a href="#portfolio-section"> Work </a>
-            <a href="#contact-section"> Contact </a>
         </nav>
     </header>
     <main>
@@ -32,6 +39,29 @@
             <div class="portfolio-content">
                 <h2><span class="accent-1">₊⊹</span> My Work <span class="accent-1">.ᐟ</span></h2>
                 <div class="flex-container-grid">
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/miku-fallback.png" alt="miku" srcset="images/miku-640.png 640w,
+                    images/miku-1280.png 1280w,
+                    images/miku-1920.png 1920w,">
+                        <h3>Biblically Accurate Miku</h3>
+                        <p>At the time, I couldn't find any art of Miku as a biblically accurate angel so I made my own.
+                        </p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/alien.PNG" alt="alien">
+                        <h3>Alien Cat</h3>
+                        <p>I made this piece to experiment with overlays and colors</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/bug.PNG" alt="bug">
+                        <h3>My Favorite Son</h3>
+                        <p>A character sheet made in preparation for 2026 artfight.</p>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <img src="images/lychee.png" alt="lychee">
+                        <h3>Also My Son I Guess</h3>
+                        <p>Another character sheet made in preparation for 2026 artfight.</p>
+                    </div>
                     <div class="portfolio-item flex-item-grid">
                         <img src="images/miku-fallback.png" alt="miku" srcset="images/miku-640.png 640w,
                     images/miku-1280.png 1280w,
@@ -75,6 +105,7 @@
             <a href="#"><img src="images/icon-logo-youtube.png" alt=""></a>
         </div>
     </footer>
+    <script src="js/hamburger.js"></script>
 </body>
 
 </html>
