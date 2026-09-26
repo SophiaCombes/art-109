@@ -77,7 +77,9 @@ nav a:hover {
     margin: 2rem 0;
 }
 
-
+.portfolio-item {
+    padding: 1rem;
+}
 
 
 
