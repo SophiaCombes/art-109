@@ -1,0 +1,113 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ color palette ~~~~~~~~~~~~~~~~~~~~~ */
+
+:root {
+    --bg-color-1: #8b84a3;
+    --bg-color-2: #cde9ff;
+    --font-1: #f5f5f5;
+    --accent-1: #BFE2FF;
+}
+
+
+
+/* CSS resets */
+
+/* change box-sizing default to border-box */
+ *,
+ *::before
+ *::after {
+    box-sizing: border-box;
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+html {
+    font-size: 100%;
+}
+
+/* make images responsive */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* General CSS */
+
+body {
+    background-color: var(--bg-color-1);
+    color: var(--font-1);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding: 5rem 2rem;
+}
+
+header h1 {
+    text-shadow: 2px 0 0px #ff9ced8b, 3px 2px 0px #BFE2FF, 3px 0 3px #BFE2FF, 5px 0 3px #ff8ee1, 6px 2px 3px #8ebdff, 8px 0 20px #72ceff;
+    font-size: 5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--font-1);
+    margin: 0 1rem;
+}
+
+nav a:hover {
+    color: #BFE2FF;
+}
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 60rem;
+    margin: 5rem auto;
+}
+
+.about-content h2,
+.portfolio-content h2,
+.contact-content h2 {
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+
+footer {
+    padding: 3rem 1rem;
+}
+
+footer img {
+    display: inline;
+    max-width: 3rem;
+    margin: 0 .5rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ flex styling ~~~~~~~~~~~~~~~~~~~ */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-grid {
+    flex: 0 0 33%;
+    padding: 1rem;
+
+}
