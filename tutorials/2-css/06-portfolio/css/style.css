@@ -1,9 +1,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ color palette ~~~~~~~~~~~~~~~~~~~~~ */
 
 :root {
-    --bg-color-1: #8b84a3;
+    --bg-color-1: #f3f6ed;
     --bg-color-2: #cde9ff;
-    --font-1: #f5f5f5;
+    --font-1: rgb(96, 185, 212);
     --accent-1: #BFE2FF;
 }
 
@@ -41,7 +41,8 @@ html {
 }
 
 body {
-    background-color: var(--bg-color-1);
+    background-image: url("../images/back.jpg");
+    background-attachment: fixed;
     color: var(--font-1);
     font-size: 1.5rem;
     line-height: 1.5;
@@ -55,13 +56,122 @@ body {
 
 
 header {
-    padding: 3rem 2rem;
+    padding: 0 3rem;
+    margin-top: 3rem;
 }
 
 header h1 {
     /* text-shadow: 2px 0 0px #ff9ced8b, 3px 2px 0px #BFE2FF, 3px 0 3px #BFE2FF, 5px 0 3px #ff8ee1, 6px 2px 3px #8ebdff, 8px 0 20px #72ceff; */
     font-size: 4rem;
+
 }
+
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+    background-image: linear-gradient(0deg, #bae6f4, #bae6f4, #fdffc0, #f3f4e6, #f3f4e6);
+    -webkit-text-stroke: 0.1rem #249f9d;
+    background-clip: text;
+    color: transparent;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(5) {
+    animation-delay: 0s;
+}
+
+.wave-text span:nth-child(6) {
+    animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(7) {
+    animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(8) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(9) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(10) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(11) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(12) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(13) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(14) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(15) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(16) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(17) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(18) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(19) {
+    animation-delay: 0.6s;
+}
+
+.wave-text span:nth-child(20) {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+/* 
 
 nav a {
     text-decoration: none;
@@ -127,7 +237,7 @@ nav a:hover {
         padding: 1.5rem 2rem;
     }
 }
-
+ */
 
 
 
@@ -169,9 +279,9 @@ main {
 
 
 .container-menu section {
-    background-color: #80b5d2;
+    background-image: linear-gradient(0deg, #f9fae7, #e9fff6, #fefff4);
     border-radius: .8rem;
-    border: solid 0.3rem #000;
+    border: solid 3px #249f9d;
     margin: 1rem;
     list-style-type: none;
 }
@@ -183,22 +293,34 @@ aside {
 }
 
 .container-menu h1 {
-    color: #000;
-    border: solid .3rem #000;
+    color: #90deea;
+    border: solid 3px #90deea;
     text-align: center;
     border-radius: .8rem;
     font-size: 2rem;
+    text-shadow: 3px 3px 2px white, -3px -3px 2px white, 3px -3px 2px white, -3px 3px 2px white;
+    background-image: linear-gradient(0deg, #fadff4, #fadff4, #fadff4, #f1f7e9);
+
 }
 
 .container-menu a {
     text-decoration: none;
+    color: rgb(96, 185, 212);
 }
 
+
 .container-small section {
-    background-color: #80b5d2;
+    background-color: var(--bg-color-1);
     border-radius: .8rem;
-    border: solid 0.3rem #000;
+    border: solid 3px #249f9d;
     margin: 1rem;
+    /* -webkit-text-stroke: 0.1rem #249f9d; */
+}
+
+.container-small section h2 {
+    -webkit-text-stroke: 0.05rem #249f9d;
+    /* color: #c1e6ef; */
+    color: #e2f1a1;
 }
 
 
@@ -206,7 +328,7 @@ aside {
 .portfolio-content,
 .contact-content {
     max-width: 80rem;
-    margin: 0 auto 7rem auto;
+    /* margin: 0 auto 7rem auto; */
 }
 
 .about-content h2,
@@ -217,8 +339,16 @@ aside {
 
 .portfolio-item {
     padding: 1rem;
-    background-color: var(--font-1);
-    color: var(--bg-color-1);
+    /* border: solid 4px #7096d6; */
+    border-radius: 0.5rem;
+    background-image: linear-gradient(0deg, #bae6f4, #e5f6fd, #f3f4e6, #f3f4e6);
+    color: #7096d6;
+    box-shadow: 0 0 1rem #f3d7f0, 0 0 1rem #f3d7f0;
+}
+
+.portfolio-item h3 {
+    color: #f3d7f0;
+    text-shadow: 0 0 4px #249f9d, 1px 1px 1px #7096d6, -1px 0 1px #7096d6;
 }
 
 
@@ -227,8 +357,9 @@ aside {
 
 footer {
     padding: 3rem 1rem;
-    background-color: var(--font-1);
-    color: var(--bg-color-1);
+    background-image: linear-gradient(0deg, #bae6f4, #feffd5);
+    border-top: solid 4px #7096d6;
+    color: #7096d6;
 
 }
 
