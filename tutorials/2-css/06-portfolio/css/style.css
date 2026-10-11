@@ -43,6 +43,11 @@ html {
 body {
     background-image: url("../images/back.jpg");
     background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-position: center center;
     color: var(--font-1);
     font-size: 1.5rem;
     line-height: 1.5;
