@@ -4,21 +4,18 @@ let flowers = [];
 
 let currentFlowerType = 1;
 
-let bgImage;
-
-function preload() {
-  bgImage = loadImage('../images/soil.jpg');
-}
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
+    canvas.style('z-index', '-1');
     angleMode(DEGREES);
     noStroke();
 }
 
 function draw() {
     // background(173, 142, 118);
+      clear();
 
 
     for (let i = 0; i < flowers.length; i++) {
@@ -41,7 +38,6 @@ function draw() {
 
             let progress = layer / (totalLayers - 1);
 
-            // Interpolate between the outer color and the white inner color
             let currentGradientColor = lerpColor(outerColor, innerColor, progress);
             fill(currentGradientColor);
 
@@ -130,7 +126,7 @@ function keyPressed() {
 function drawUI() {
     fill(255);
     textStyle(BOLD);
-    textSize(14);
+    textSize(25);
     textAlign(LEFT, TOP);
     let currentName = currentFlowerType === 1 ? "Green" : currentFlowerType === 2 ? "Pink" : "Yellow";
     text("Press keys 1, 2, or 3 to swap flower types.", 20, 20);

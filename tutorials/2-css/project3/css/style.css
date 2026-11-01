@@ -1,0 +1,15 @@
+body {
+
+    background-image: url('../images/soil.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+canvas {
+    z-index: -1;
+}
