@@ -129,6 +129,6 @@ function drawUI() {
     textSize(25);
     textAlign(LEFT, TOP);
     let currentName = currentFlowerType === 1 ? "Green" : currentFlowerType === 2 ? "Pink" : "Yellow";
-    text("Press keys 1, 2, or 3 to swap flower types.", 20, 20);
+    text("Press keys 1, 2, or 3 to swap succulent types.", 20, 20);
     text("Selected: " + currentName, 20, 40);
 }
