@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#262b31">
+    <meta name="description" content="A saved checklist for enchanting your Minecraft armor and tools.">
+    <title>Minecraft Enchantment Checklist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="header-content">
+            <p class="eyebrow">Have Fun Enchanting!!!</p>
+            <h1>Minecraft Enchantment Checklist</h1>
+            <div class="overall-progress" aria-live="polite">
+                <div class="progress-copy">
+                    <span id="progress-label">0 of 4 armor pieces complete</span>
+                    <span id="progress-percent">0%</span>
+                </div>
+                <div class="progress-track" role="progressbar" aria-label="Completed armor pieces" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0" id="progress-bar">
+                    <span id="progress-fill"></span>
+                </div>
+            </div>
+            <p id="save-notice" class="save-notice" role="status" hidden></p>
+        </div>
+    </header>
+
+    <main class="checklist" id="checklist" aria-label="Enchantment checklists"></main>
+    <footer class="page-footer">Bye Gamers!</footer>
+    <script src="js/sketch.js"></script>
+</body>
+</html>
