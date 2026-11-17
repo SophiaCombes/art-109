@@ -6,7 +6,7 @@ var server = app.listen(3000);
 
 app.use(express.static('public'));
 
-console.log("hello world");
+console.log("server is working!");
 
 var socket = require('socket.io');
 
